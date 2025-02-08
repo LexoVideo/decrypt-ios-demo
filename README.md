@@ -1,18 +1,15 @@
 # decrypt-ios-demo
 
 ## Get the SDK
-Download the sdk here:
-https://libs.lexo.video/ios-framework/DRMLib/2.0.0/DRMLib.xcframework.zip
-
-## Get the SDK by CocoaPod
 ```
 source 'https://github.com/CocoaPods/Specs.git' 
 source 'https://github.com/LexoVideo/lexo-dev-specs.git'
 ```
 
 ## Add the dependecy
-1) add the sdk into the project
-2) add CryptoSwift by CocoaPod or Carthage.
+```swift
+pod 'DRMLib'
+```
 
 ## Decrypt the resource
 1) create an plugin
