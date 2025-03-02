@@ -6,6 +6,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/LexoVideo/lexo-dev-specs.git'
 ```
 
+DO NOT USE Direct URL to download any more!!
+
 ## Add the dependecy
 ```swift
 pod 'DRMLib'
