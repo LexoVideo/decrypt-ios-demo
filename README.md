@@ -16,7 +16,8 @@ pod 'DRMLib'
 ## Decrypt the resource
 1) create an plugin
 ```swift
-var plugin: DRMPlugin = .init()
+let encryptKey = "your_encrypt_key" // the encrypt key to decrypt your video
+var plugin: DRMPlugin = .init(encryptKey: encryptKey)
 ```
 2) enable/disable the encrypt(drm check)
 The lib will use decrypt for default, if you want to disable/enable it by url or something else, change the result in the block. 

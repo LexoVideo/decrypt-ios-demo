@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     @objc
     func checkDecrypt() {
         print("start check")
-        let util: DRMPlugin = .init()
+        let encryptKey: String = "your_video_encrypt_key"
+        let util: DRMPlugin = .init(encryptKey: encryptKey)
         // get your encrypted file
         let encryptedUrl = Bundle.main.url(forResource: "encrypted", withExtension: "ts")!
         let encryptedData = try! Data(contentsOf: encryptedUrl)
